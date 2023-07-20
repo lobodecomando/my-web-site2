@@ -147,27 +147,31 @@
         margin-left: 0px;
       }
 
+      /* Ajustes de posición y tamaño de fuente para los contenedores en dispositivos móviles */
+      .h1-container {
+        font-size: 24px;
+      }
+
       .p-container,
       .c-container,
       .t-container {
         width: 90%;
+        max-width: 90%;
         margin-left: 0;
-      }
-
-      .button-gray {
-        left: 0;
-        top: 0;
-      }
-
-      .button-blue {
-        left: 0;
-        top: 0;
       }
 
       /* Ajustes de posición de la nueva sección en dispositivos móviles */
       .new-image-container {
         width: 60px;
         height: 30px;
+      }
+
+      /* Ajustes de posición para evitar superposición de textos en dispositivos móviles */
+      .p-container,
+      .c-container,
+      .t-container {
+        margin-top: 10px;
+        margin-left: 0; /* Centrar los contenedores de texto en la pantalla */
       }
     }
   </style>
