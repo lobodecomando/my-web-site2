@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mi página web con texto e imagen</title>
+  <title>Mi página web para subir demos</title>
+  <!-- Agrega la siguiente etiqueta meta para ajustar la escala en dispositivos móviles -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       background-color: #353740;
@@ -132,40 +134,40 @@
 
     /* Estilos específicos para pantallas de hasta 600px de ancho (dispositivos móviles) */
     @media (max-width: 600px) {
+      body {
+        font-size: 16px;
+      }
+
       .image-container {
-        width: 80%; /* Cambiar el tamaño de la imagen */
-        height: auto; /* La altura se ajustará proporcionalmente */
+        width: 80px;
+        height: 300px;
       }
 
       .h1-container {
-        margin-left: 0; /* Eliminar el margen izquierdo */
+        margin-left: 0px;
       }
 
-      .p-container {
-        width: 90%; /* Cambiar el ancho del párrafo */
-        margin-left: 0; /* Eliminar el margen izquierdo */
-      }
-
+      .p-container,
       .c-container,
       .t-container {
-        width: 90%; /* Cambiar el ancho de los contenedores c y t */
-        margin-left: 0; /* Eliminar el margen izquierdo */
+        width: 90%;
+        margin-left: 0;
       }
 
-      .button-container {
-        flex-direction: column; /* Alinear los botones verticalmente */
-        margin-top: 20px; /* Cambiar el margen superior */
+      .button-gray {
+        left: 0;
+        top: 0;
       }
 
-      .button {
-        margin: 5px; /* Ajustar el margen entre los botones */
+      .button-blue {
+        left: 0;
+        top: 0;
       }
 
-      /* Estilos para la nueva sección en dispositivos móviles */
+      /* Ajustes de posición de la nueva sección en dispositivos móviles */
       .new-image-container {
-        width: 50%; /* Cambiar el tamaño de la nueva imagen */
-        height: auto; /* La altura se ajustará proporcionalmente */
-        margin-top: 20px; /* Ajustar el margen superior */
+        width: 60px;
+        height: 30px;
       }
     }
   </style>
@@ -187,7 +189,7 @@
     <p>Puedes descargar la demo escaneando el código, descargando el .exe (para PC) o el .apk (para móvil). También puedes dar clic a la URL que te llevará a otra página donde podrás jugar desde tu navegador.</p>
   </div>
   <div class="p-container">
-    <a href="https://picshost.pics/DPKYAV.html">juega a Vision Venture en tu navegador</a>
+    <a href="https://picshost.pics/DPKYAV.html">Juega a Vision Venture en tu navegador</a>
   </div>
   <div class="c-container">
     <p>Descarga para Windows (exe)</p>
@@ -219,7 +221,7 @@
   <script>
     document.getElementById('downloadButtonGray').addEventListener('click', function() {
       // Código de descarga para el botón gris (igual que antes)
-    var fileUrlGray = 'https://drive.google.com/file/d/1xfa6RsXcHilxrmKpGi1wKpJl5jBIzl0w/view?usp=drivesdk';
+      var fileUrlGray = 'https://drive.google.com/file/d/1xfa6RsXcHilxrmKpGi1wKpJl5jBIzl0w/view?usp=drivesdk';
 
       // Cambia el nombre del archivo gris que se descargará
       var fileNameGray = 'VisionVenture(Apk).zip';
