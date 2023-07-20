@@ -140,7 +140,7 @@
 
       .image-container {
         width: 80px;
-        height: 80px;
+        height: 300px;
       }
 
       .h1-container {
@@ -158,20 +158,14 @@
         width: 90%;
         max-width: 90%;
         margin-left: 0;
+        /* Ajustes de posición individual en dispositivos móviles */
+        margin-top: 10px;
       }
 
       /* Ajustes de posición de la nueva sección en dispositivos móviles */
       .new-image-container {
         width: 60px;
         height: 30px;
-      }
-
-      /* Ajustes de posición para evitar superposición de textos en dispositivos móviles */
-      .p-container,
-      .c-container,
-      .t-container {
-        margin-top: 20px;
-        margin-left: 0; /* Centrar los contenedores de texto en la pantalla */
       }
     }
   </style>
@@ -186,7 +180,7 @@
   <div class="p-container">
     <p>Pero bueno, eso no viene al caso.</p>
   </div>
-  <div class="p-container">
+  <div class="p-container" style="margin-top: 30px;"> <!-- Ajuste individual de posición con respecto al eje Y -->
     <p>Estoy trabajando en un videojuego el cual se controla con los ojos, y quiero que pruebes su demo para informarme de errores y de algunas ideas que tengas para mejorar el juego.</p>
   </div>
   <div class="p-container">
@@ -195,10 +189,10 @@
   <div class="p-container">
     <a href="https://picshost.pics/DPKYAV.html">Juega a Vision Venture en tu navegador</a>
   </div>
-  <div class="c-container">
+  <div class="c-container" style="margin-top: 50px;"> <!-- Ajuste individual de posición con respecto al eje Y -->
     <p>Descarga para Windows (exe)</p>
   </div>
-  <div class="t-container">
+  <div class="t-container" style="margin-top: 10px;"> <!-- Ajuste individual de posición con respecto al eje Y -->
     <p>Descarga para Android (Apk)</p>
   </div>
   <div class="button-container">
