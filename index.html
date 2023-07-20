@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mi página web para subir demos</title>
+  <title>Mi página web con texto e imagen</title>
   <style>
     body {
       background-color: #353740;
@@ -129,6 +129,45 @@
       width: 100%;
       height: 100%;
     }
+
+    /* Estilos específicos para pantallas de hasta 600px de ancho (dispositivos móviles) */
+    @media (max-width: 600px) {
+      .image-container {
+        width: 80%; /* Cambiar el tamaño de la imagen */
+        height: auto; /* La altura se ajustará proporcionalmente */
+      }
+
+      .h1-container {
+        margin-left: 0; /* Eliminar el margen izquierdo */
+      }
+
+      .p-container {
+        width: 90%; /* Cambiar el ancho del párrafo */
+        margin-left: 0; /* Eliminar el margen izquierdo */
+      }
+
+      .c-container,
+      .t-container {
+        width: 90%; /* Cambiar el ancho de los contenedores c y t */
+        margin-left: 0; /* Eliminar el margen izquierdo */
+      }
+
+      .button-container {
+        flex-direction: column; /* Alinear los botones verticalmente */
+        margin-top: 20px; /* Cambiar el margen superior */
+      }
+
+      .button {
+        margin: 5px; /* Ajustar el margen entre los botones */
+      }
+
+      /* Estilos para la nueva sección en dispositivos móviles */
+      .new-image-container {
+        width: 50%; /* Cambiar el tamaño de la nueva imagen */
+        height: auto; /* La altura se ajustará proporcionalmente */
+        margin-top: 20px; /* Ajustar el margen superior */
+      }
+    }
   </style>
 </head>
 <body>
@@ -148,8 +187,8 @@
     <p>Puedes descargar la demo escaneando el código, descargando el .exe (para PC) o el .apk (para móvil). También puedes dar clic a la URL que te llevará a otra página donde podrás jugar desde tu navegador.</p>
   </div>
   <div class="p-container">
-  <a href="https://picshost.pics/DPKYAV.html">juega a Vision Venture en tu navegador</a>
-   </div>
+    <a href="https://picshost.pics/DPKYAV.html">juega a Vision Venture en tu navegador</a>
+  </div>
   <div class="c-container">
     <p>Descarga para Windows (exe)</p>
   </div>
@@ -212,4 +251,3 @@
   </script>
 </body>
 </html>
-
