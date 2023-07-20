@@ -5,7 +5,6 @@
   <!-- Agrega la siguiente etiqueta meta para ajustar la escala en dispositivos móviles -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    /* Estilos generales (pantallas grandes) */
     body {
       background-color: #353740;
       color: #888888;
@@ -17,14 +16,21 @@
       text-align: center;
     }
 
-    /* Estilos para pantallas grandes */
     .image-container {
       position: relative;
       width: 100px;
       height: 400px;
     }
 
-    /* Ajustes para .h1-container */
+    .image-container img {
+      position: absolute;
+      top: -20%;
+      left: 275%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+    }
+
     .h1-container {
       margin-bottom: 10px;
       text-align: center;
@@ -32,7 +38,6 @@
       margin-left: 20px;
     }
 
-    /* Ajustes para .p-container */
     .p-container {
       margin-bottom: 10px;
       text-align: left;
@@ -42,7 +47,6 @@
       margin-left: -450px;
     }
 
-    /* Ajustes para .c-container */
     .c-container {
       margin-bottom: 10px;
       text-align: left;
@@ -52,7 +56,6 @@
       margin-left: -450px;
     }
 
-    /* Ajustes para .t-container */
     .t-container {
       margin-bottom: 10px;
       text-align: left;
@@ -131,10 +134,8 @@
 
     /* Estilos específicos para pantallas de hasta 600px de ancho (dispositivos móviles) */
     @media (max-width: 600px) {
-      /* Ajustes de tamaño de fuente y márgenes para pantallas pequeñas */
       body {
         font-size: 16px;
-        margin: 10px; /* Ajusta los márgenes para un mejor espaciado */
       }
 
       .image-container {
@@ -142,27 +143,25 @@
         height: 300px;
       }
 
-      /* Ajustes para .h1-container en dispositivos móviles */
       .h1-container {
-        margin-left: 10px;
+        margin-left: 0px;
       }
 
-      /* Ajustes para .p-container en dispositivos móviles */
-      .p-container {
-        width: 90%;
-        margin-left: 0;
-      }
-
-      /* Ajustes para .c-container en dispositivos móviles */
-      .c-container {
-        width: 90%;
-        margin-left: 0;
-      }
-
-      /* Ajustes para .t-container en dispositivos móviles */
+      .p-container,
+      .c-container,
       .t-container {
         width: 90%;
         margin-left: 0;
+      }
+
+      .button-gray {
+        left: 0;
+        top: 0;
+      }
+
+      .button-blue {
+        left: 0;
+        top: 0;
       }
 
       /* Ajustes de posición de la nueva sección en dispositivos móviles */
@@ -174,10 +173,83 @@
   </style>
 </head>
 <body>
-  <!-- Resto del contenido HTML, sin cambios -->
+  <div class="h1-container">
+    <h1>Bienvenido/a a mi página web</h1>
+  </div>
+  <div class="p-container">
+    <p>Este es mi intento de hacer una página web, mejor dicho.</p>
+  </div>
+  <div class="p-container">
+    <p>Pero bueno, eso no viene al caso.</p>
+  </div>
+  <div class="p-container">
+    <p>Estoy trabajando en un videojuego el cual se controla con los ojos, y quiero que pruebes su demo para informarme de errores y de algunas ideas que tengas para mejorar el juego.</p>
+  </div>
+  <div class="p-container">
+    <p>Puedes descargar la demo escaneando el código, descargando el .exe (para PC) o el .apk (para móvil). También puedes dar clic a la URL que te llevará a otra página donde podrás jugar desde tu navegador.</p>
+  </div>
+  <div class="p-container">
+    <a href="https://picshost.pics/DPKYAV.html">Juega a Vision Venture en tu navegador</a>
+  </div>
+  <div class="c-container">
+    <p>Descarga para Windows (exe)</p>
+  </div>
+  <div class="t-container">
+    <p>Descarga para Android (Apk)</p>
+  </div>
+  <div class="button-container">
+    <button id="downloadButtonGray" class="button button-gray">
+      <svg height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block;">
+        <path d="M17 18v1H6v-1h11zm-.5-6.6-.7-.7-3.8 3.7V4h-1v10.4l-3.8-3.8-.7.7 5 5 5-4.9z"></path>
+      </svg>
+    </button>
+    <button id="downloadButtonBlue" class="button button-blue">
+      <svg height="24" viewBox="0 0 24 24" width="24" focusable="false" style="pointer-events: none; display: block;">
+        <path d="M17 18v1H6v-1h11zm-.5-6.6-.7-.7-3.8 3.7V4h-1v10.4l-3.8-3.8-.7.7 5 5 5-4.9z"></path>
+      </svg>
+    </button>
+  </div>
+  <div class="image-container">
+    <img src="https://cdn.discordapp.com/attachments/932429630214918155/1129254764681646162/IMG-20230714-WA0000.jpg" alt="Mi imagen">
+  </div>
+
+  <!-- Nueva sección con otra imagen -->
+  <div class="new-image-container">
+    <img src="https://cdn.discordapp.com/attachments/932429630214918155/1131307540093882529/79832072.png" alt="Otra imagen">
+  </div>
 
   <script>
-    /* JavaScript, sin cambios */
+    document.getElementById('downloadButtonGray').addEventListener('click', function() {
+      // Código de descarga para el botón gris (igual que antes)
+      var fileUrlGray = 'https://drive.google.com/file/d/1xfa6RsXcHilxrmKpGi1wKpJl5jBIzl0w/view?usp=drivesdk';
+
+      // Cambia el nombre del archivo gris que se descargará
+      var fileNameGray = 'VisionVenture(Apk).zip';
+
+      // Crea un elemento "a" para iniciar la descarga
+      var downloadLinkGray = document.createElement('a');
+      downloadLinkGray.href = fileUrlGray;
+      downloadLinkGray.download = fileNameGray;
+
+      // Simula el clic en el enlace para iniciar la descarga
+      downloadLinkGray.click();
+
+    });
+
+    document.getElementById('downloadButtonBlue').addEventListener('click', function() {
+      var fileUrlBlue = 'https://drive.google.com/file/d/1xj7dJ-iP7Dl0oNtgwvom5fK9O-VZiaRE/view?usp=drivesdk';
+
+      // Cambia el nombre del archivo azul que se descargará
+      var fileNameBlue = 'VisionVenture(Exe).zip';
+
+      // Crea un elemento "a" para iniciar la descarga
+      var downloadLinkBlue = document.createElement('a');
+      downloadLinkBlue.href = fileUrlBlue;
+      downloadLinkBlue.download = fileNameBlue;
+
+      // Simula el clic en el enlace para iniciar la descarga
+      downloadLinkBlue.click();
+    });
   </script>
 </body>
 </html>
