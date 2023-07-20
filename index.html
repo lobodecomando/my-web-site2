@@ -5,7 +5,6 @@
   <!-- Agrega la siguiente etiqueta meta para ajustar la escala en dispositivos móviles -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    /* Estilos generales (pantallas grandes) */
     body {
       background-color: #353740;
       color: #888888;
@@ -36,33 +35,40 @@
       margin-bottom: 10px;
       text-align: center;
       margin-top: 0px;
+      margin-left: 20px;
     }
 
     .p-container {
       margin-bottom: 10px;
-      text-align: center;
-      width: 80%;
-      max-width: 800px;
+      text-align: left;
+      width: 800px;
+      height: 25px;
+      margin-top: 20px;
+      margin-left: -450px;
     }
 
     .c-container {
       margin-bottom: 10px;
-      text-align: center;
-      width: 80%;
-      max-width: 800px;
+      text-align: left;
+      width: 800px;
+      height: 25px;
+      margin-top: 60px;
+      margin-left: -450px;
     }
 
     .t-container {
       margin-bottom: 10px;
-      text-align: center;
-      width: 80%;
-      max-width: 800px;
+      text-align: left;
+      width: 800px;
+      height: 25px;
+      margin-top: 10px;
+      margin-left: -450px;
     }
 
     .button-container {
       display: flex;
       justify-content: center;
-      margin-top: 20px; /* Ajuste para separar los botones del texto */
+      margin-top: -30px;
     }
 
     .button {
@@ -100,13 +106,13 @@
 
     /* Ajustes de posición de los botones */
     .button-gray {
-      left: 0;
-      top: 0;
+      left: -385px;
+      top: 2px;
     }
 
     .button-blue {
-      left: -40px;
-      top: -40px;
+      left: -425px;
+      top: -42px;
     }
 
     /* Estilos para la nueva sección */
@@ -137,30 +143,31 @@
         height: 300px;
       }
 
-      /* Ajustes de posición y tamaño de fuente para los contenedores en dispositivos móviles */
       .h1-container {
-        font-size: 24px;
+        margin-left: 0px;
       }
 
       .p-container,
       .c-container,
       .t-container {
         width: 90%;
-        max-width: 90%;
         margin-left: 0;
+      }
+
+      .button-gray {
+        left: 0;
+        top: 0;
+      }
+
+      .button-blue {
+        left: 0;
+        top: 0;
       }
 
       /* Ajustes de posición de la nueva sección en dispositivos móviles */
       .new-image-container {
         width: 60px;
         height: 30px;
-      }
-
-      /* Ajustes de posición para evitar superposición de textos en dispositivos móviles */
-      .p-container,
-      .c-container,
-      .t-container {
-        margin-top: 5px; /* Ajuste para reducir el espacio entre párrafos */
       }
     }
   </style>
@@ -183,6 +190,12 @@
   </div>
   <div class="p-container">
     <a href="https://picshost.pics/DPKYAV.html">Juega a Vision Venture en tu navegador</a>
+  </div>
+  <div class="c-container">
+    <p>Descarga para Windows (exe)</p>
+  </div>
+  <div class="t-container">
+    <p>Descarga para Android (Apk)</p>
   </div>
   <div class="button-container">
     <button id="downloadButtonGray" class="button button-gray">
